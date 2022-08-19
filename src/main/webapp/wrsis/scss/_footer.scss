@@ -1,0 +1,25 @@
+
+footer {
+    position: $fixed;
+    bottom: 0;
+    right: 0;
+    padding: $s1 $s3;
+    background: $white;
+    left: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03),0 3px 1px -2px rgba(0,0,0,0.05),0 1px 5px 0 rgba(0,0,0,0.1);
+    text-align: $center;
+    z-index:9;
+    p {
+        margin-bottom: 0;
+        font-size: 14px;
+		text-shadow: 1px 2px 3px #d1d1d1;
+    }
+}
+
+
+
+@media screen and (min-width:$break-ipad) {
+    footer {
+        text-align: $center;
+    }
+}

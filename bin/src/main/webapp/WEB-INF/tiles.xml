@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+ 
+       <definition name="standard-layout" template="/WEB-INF/tiles/layout.jsp">
+       	<put-attribute name="title" value="Admin Console"></put-attribute>
+       	<put-attribute name="pageTitle" value="Dashboard"></put-attribute>
+       	<put-attribute name="pnav" value=""></put-attribute>
+       	<put-attribute name="snav" value=""></put-attribute>
+       	<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>  
+        <put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>   
+        <put-attribute name="body" value=""></put-attribute>
+       </definition>
+       
+       
+       
+       <definition name="errorPage" extends="standard-layout">
+            <put-attribute name="body" value="/WEB-INF/jsp/errorPage.jsp"></put-attribute>
+       </definition>
+       
+       <!-- <definition name="login" template="/WEB-INF/jsp/login.jsp"></definition> -->
+       
+       <!-- Function Master start -->
+       <definition name="addFunctionMaster" extends="page-layout">
+       	  <put-attribute name="body" value="/WEB-INF/jsp/Admin/addFunctionMaster.jsp"></put-attribute>
+       </definition>
+       <definition name="viewFunctionMaster" extends="page-layout">
+       	  <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewFunctionMaster.jsp"></put-attribute>
+       </definition>
+       <definition name="editFunctionMaster" extends="page-layout">
+       	   <put-attribute name="body" value="/WEB-INF/jsp/Admin/editFunctionMaster.jsp"></put-attribute>
+       </definition>
+        <!-- Function Master end -->
+       
+        <!-- Global Link start -->
+       <definition name="addGlobalLink" extends="page-layout">
+       	   <put-attribute name="body" value="/WEB-INF/jsp/Admin/addGlobalLink.jsp"></put-attribute>
+       </definition>
+       
+       <definition name="viewGlobalLink" extends="page-layout">
+       	  <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewGlobalLink.jsp"></put-attribute>
+       </definition>
+       <definition name="editGlobalLink" extends="page-layout">
+       	    <put-attribute name="body" value="/WEB-INF/jsp/Admin/editGlobalLink.jsp"></put-attribute>
+       </definition>
+        <!-- Global Link end -->
+       
+        <!-- Primary Link start -->
+       <definition name="addPrimaryLink" extends="page-layout">
+       	  <put-attribute name="body" value="/WEB-INF/jsp/Admin/addPrimaryLink.jsp"></put-attribute>
+       </definition>
+       
+       <definition name="viewPrimaryLink" extends="page-layout">
+       	   <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewPrimaryLink.jsp"></put-attribute>
+       </definition>
+       
+       <definition name="editPrimaryLink" extends="page-layout">
+       	  <put-attribute name="body" value="/WEB-INF/jsp/Admin/editPrimaryLink.jsp"></put-attribute>
+       </definition>
+        <!-- Primary Link end -->
+        
+        <!-- Button Master start -->
+       <definition name="addButtonMaster" extends="standard-layout">
+       	   <put-attribute name="title" value="Manage Tab Master"></put-attribute>
+       	    <put-attribute name="pageTitle" value="Add Button Master"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Link"></put-attribute>
+       		<put-attribute name="snav" value="Button Master"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/addButtonMaster.jsp"></put-attribute>
+       </definition>
+       <definition name="viewButtonMaster" extends="standard-layout">
+       	   <put-attribute name="title" value="Manage Tab Master"></put-attribute>
+       	    <put-attribute name="pageTitle" value="Add Button Master"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Link >"></put-attribute>
+       		<put-attribute name="snav" value="Button Master"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewButtonMaster.jsp"></put-attribute>
+       </definition>
+       <definition name="editButtonMaster" extends="standard-layout">
+       	   <put-attribute name="title" value="Manage Tab Master"></put-attribute>
+       	    <put-attribute name="pageTitle" value="Add Button Master"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Link"></put-attribute>
+       		<put-attribute name="snav" value="Button Master"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/editButtonMaster.jsp"></put-attribute>
+       </definition>
+        <!-- Button Master end -->
+        
+         <!-- Tab Master start -->
+       <definition name="addTabMaster" extends="standard-layout">
+       	   <put-attribute name="title" value="Manage Tab Master"></put-attribute>
+       	    <put-attribute name="pageTitle" value="Add Tab Master"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Link"></put-attribute>
+       		<put-attribute name="snav" value="Tab Master"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/addTabMaster.jsp"></put-attribute>
+       </definition>
+       <definition name="viewTabMaster" extends="standard-layout">
+       	   <put-attribute name="title" value="Manage Tab Master"></put-attribute>
+       	    <put-attribute name="pageTitle" value="Add Tab Master"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Link >"></put-attribute>
+       		<put-attribute name="snav" value="Tab Master"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewTabMaster.jsp"></put-attribute>
+       </definition>
+       <definition name="editTabMaster" extends="standard-layout">
+       	   <put-attribute name="title" value="Manage Tab Master"></put-attribute>
+       	    <put-attribute name="pageTitle" value="Add Tab Master"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Link"></put-attribute>
+       		<put-attribute name="snav" value="Tab Master"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/editTabMaster.jsp"></put-attribute>
+       </definition>
+        <!-- Tab Master end -->
+       
+        <!-- country Master start -->
+       <definition name="addCountry" extends="standard-layout">
+       	   <put-attribute name="title" value="wrsis || Admin"></put-attribute>
+       	    <put-attribute name="pageTitle" value="Add Country"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master"></put-attribute>
+       		<put-attribute name="snav" value="Manage Country"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/addCountry.jsp"></put-attribute>
+       </definition>
+       <definition name="viewCountry" extends="standard-layout">
+       	   <put-attribute name="title" value="wrsis || Admin"></put-attribute>
+       	    <put-attribute name="pageTitle" value="View Country"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master"></put-attribute>
+       		<put-attribute name="snav" value="Manage Country"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewCountry.jsp"></put-attribute>
+       </definition>
+       <definition name="modifyCountry" extends="standard-layout">
+       	   <put-attribute name="title" value="wrsis || Admin"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master"></put-attribute>
+       		<put-attribute name="snav" value="Manage Country"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/modifyCountry.jsp"></put-attribute>
+       </definition>
+       <!-- Country Master end -->
+
+       <!-- User Profile Start -->
+     
+       <definition name="addUser" extends="standard-layout">
+            <put-attribute name="title" value="wrsis ||Existing User"></put-attribute>
+            <put-attribute name="pageTitle" value="Add User"></put-attribute>
+              <put-attribute name="pnav" value="Manage Application"></put-attribute>
+       		<put-attribute name="snav" value="Manage Existing User"></put-attribute>
+       	    <put-attribute name="menu" value="/WEB-INF/tiles/menu1.jsp"></put-attribute>
+       <put-attribute name="body" value="/WEB-INF/jsp/addUser.jsp"></put-attribute>
+       </definition> 
+       <definition name="viewUser" extends="standard-layout">
+          <put-attribute name="title" value="wrsis ||Existing User"></put-attribute>
+            <put-attribute name="pageTitle" value="View User"></put-attribute>
+            <put-attribute name="pnav" value="Manage Application >"></put-attribute>
+       		<put-attribute name="snav" value="Manage Existing User"></put-attribute>
+             <put-attribute name="menu" value="/WEB-INF/tiles/menu1.jsp"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/viewUser.jsp"></put-attribute>
+       </definition>
+       <definition name="editExistingUser" extends="standard-layout">
+            <put-attribute name="title" value="wrsis ||Existing User"></put-attribute>
+            <put-attribute name="pageTitle" value="Modify User"></put-attribute>
+              <put-attribute name="pnav" value="Manage Application"></put-attribute>
+       		<put-attribute name="snav" value="Modify Existing User"></put-attribute>
+       	    <put-attribute name="menu" value="/WEB-INF/tiles/menu1.jsp"></put-attribute>
+      	 <put-attribute name="body" value="/WEB-INF/jsp/editExistingUser.jsp"></put-attribute>
+       </definition>
+       <definition name="viewExistingUser" extends="standard-layout">
+          <put-attribute name="title" value="wrsis ||Existing User Application Form"></put-attribute>
+       	   <put-attribute name="menu" value="/WEB-INF/tiles/menu4.jsp"></put-attribute>
+       	     <put-attribute name="header" value="/WEB-INF/tiles/header1.jsp"></put-attribute>
+          	<put-attribute name="pageTitle" value="Existing User Details"></put-attribute>
+       	 <put-attribute name="pnav" value="My Application >"></put-attribute>
+       		<put-attribute name="snav" value="View Details"></put-attribute> 
+           <put-attribute name="body" value="/WEB-INF/jsp/viewExistingUser.jsp"></put-attribute>
+       </definition>
+       <definition name="viewProfile" extends="standard-layout">
+  			<put-attribute name="header" value="/WEB-INF/tiles/header1.jsp"></put-attribute>
+            <put-attribute name="title" value="wrsis ||Profile Information"></put-attribute>
+            <put-attribute name="pnav" value="Profile Information>"></put-attribute>
+       		<put-attribute name="snav" value="Profile Information"></put-attribute>
+       	    <put-attribute name="menu" value="/WEB-INF/tiles/producerMenu.jsp"></put-attribute>
+       		<put-attribute name="body" value="/WEB-INF/jsp/viewProfile.jsp"></put-attribute>
+       </definition>
+       <definition name="unlockUserAdmin" extends="standard-layout">
+	        <put-attribute name="title" value="wrsis ||  Unlock User"></put-attribute>
+            <put-attribute name="pageTitle" value="Unlock User"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Link"></put-attribute>
+       		<put-attribute name="snav" value="Unlock User"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/unlockUserAdmin.jsp"></put-attribute>
+       </definition>
+        <!-- User Profile end -->
+      
+       <!-- Start Company Master -->
+       <definition name="addComanyMaster" extends="standard-layout">
+            <put-attribute name="title" value="wrsis || Company Registration"></put-attribute>
+            <put-attribute name="pageTitle" value="Add Company"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master"></put-attribute>
+       		<put-attribute name="snav" value="Manage Company"></put-attribute> 
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/addComanyMaster.jsp"></put-attribute>
+       </definition>
+       <definition name="viewComanyMaster" extends="standard-layout">
+            <put-attribute name="title" value="wrsis || Company Registration"></put-attribute>
+            <put-attribute name="pageTitle" value="View Company"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master >"></put-attribute>
+       		<put-attribute name="snav" value="Manage Company"></put-attribute> 
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewComanyMaster.jsp"></put-attribute>
+       </definition>
+       <definition name="modifyComanyMaster" extends="standard-layout">
+            <put-attribute name="title" value="wrsis || Company Registration"></put-attribute>
+            <put-attribute name="pageTitle" value="Modify Company"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master"></put-attribute>
+       		<put-attribute name="snav" value="Manage Company"></put-attribute> 
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/modifyComanyMaster.jsp"></put-attribute>
+       </definition>
+      <!-- end Company Master -->
+       
+     <!--  Role management  start-->
+     <definition name="addRole" extends="page-layout">
+           <put-attribute name="title" value="Manage Role"></put-attribute>
+            <!-- <put-attribute name="pageTitle" value="Add Role"></put-attribute>
+            <put-attribute name="pnav" value="Manage User"></put-attribute>
+        	<put-attribute name="snav" value="Role Master"></put-attribute> -->
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/addRole.jsp"></put-attribute>
+       </definition>
+       <definition name="viewRoles" extends="page-layout">
+           <!-- <put-attribute name="title" value="Manage Role"></put-attribute>
+            <put-attribute name="pageTitle" value="View Role"></put-attribute>
+            <put-attribute name="pnav" value="Manage User"></put-attribute>
+       		<put-attribute name="snav" value="Role Master"></put-attribute> -->
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewRoles.jsp"></put-attribute>
+       </definition>
+        <definition name="editRole" extends="page-layout">
+           <!-- <put-attribute name="title" value="Manage Role"></put-attribute>
+            <put-attribute name="pageTitle" value="Edit Role"></put-attribute>
+            <put-attribute name="pnav" value="Manage User"></put-attribute>
+        	<put-attribute name="snav" value="Role Master"></put-attribute> -->
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/editRole.jsp"></put-attribute>
+       </definition>
+       <!--  Role management   end-->
+      <!-- Start Province/city/County -->
+       <definition name="addProvince" extends="standard-layout">
+            <put-attribute name="title" value="wrsis || Admin"></put-attribute>
+            <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+            <put-attribute name="pageTitle" value="Add Province/County"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master"></put-attribute>
+       		<put-attribute name="snav" value="Manage County/City"></put-attribute> 
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/addProvince.jsp"></put-attribute>
+       </definition>
+       <definition name="viewProvince" extends="standard-layout">
+            <put-attribute name="title" value="wrsis || Admin"></put-attribute>
+            <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+            <put-attribute name="pageTitle" value="View Province/County"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master >"></put-attribute>
+       		<put-attribute name="snav" value="Manage County/City"></put-attribute> 
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewProvince.jsp"></put-attribute>
+       </definition>
+       <definition name="modifyProvince" extends="standard-layout">
+            <put-attribute name="title" value="wrsis || Admin"></put-attribute>
+            <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+            <put-attribute name="pageTitle" value="Modify Province/County"></put-attribute>
+       	    <put-attribute name="pnav" value="Manage Master"></put-attribute>
+       		<put-attribute name="snav" value="Manage County/City"></put-attribute> 
+           <put-attribute name="body" value="/WEB-INF/jsp/Admin/modifyProvince.jsp"></put-attribute>
+       </definition>
+       <!-- end Province/city/County -->
+     
+     <!-- START SET PERMISSION-->
+       <definition name="addUserPermission" extends="page-layout">
+    		 <!-- <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+           	<put-attribute name="title" value="wrsis ||  Admin Home"></put-attribute>
+            <put-attribute name="pageTitle" value="Set Permission"></put-attribute>
+            <put-attribute name="pnav" value="Manage Link"></put-attribute>
+        	 <put-attribute name="snav" value="Set Permission"></put-attribute>  -->
+       		<put-attribute name="body" value="/WEB-INF/jsp/Admin/addUserPermission.jsp"></put-attribute>
+   </definition>
+    <definition name="viewUsers" extends="page-layout">
+    		 <!-- <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+           	<put-attribute name="title" value="wrsis ||  Admin Home"></put-attribute>
+            <put-attribute name="pageTitle" value="Set Permission"></put-attribute>
+            <put-attribute name="pnav" value="Manage Link"></put-attribute>
+        	 <put-attribute name="snav" value="View Permission"></put-attribute> --> 
+       <put-attribute name="body" value="/WEB-INF/jsp/Admin/viewPermissionAssigned.jsp"></put-attribute>
+   </definition>
+   <definition name="editUserPermission" extends="page-layout">
+    		 <!-- <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+           	<put-attribute name="title" value="wrsis ||  Admin Home"></put-attribute>
+            <put-attribute name="pageTitle" value="Set Permission"></put-attribute>
+            <put-attribute name="pnav" value="Manage Link"></put-attribute>
+        	 <put-attribute name="snav" value="Edit Permission"></put-attribute>  -->
+       <put-attribute name="body" value="/WEB-INF/jsp/Admin/editUserPermission.jsp"></put-attribute>
+   </definition>
+   <definition name="editGroupPermission" extends="page-layout">
+    		 <!-- <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+           	<put-attribute name="title" value="wrsis ||  Admin Home"></put-attribute>
+            <put-attribute name="pageTitle" value="Set Permission"></put-attribute>
+            <put-attribute name="pnav" value="Manage Link"></put-attribute>
+        	 <put-attribute name="snav" value="Edit Permission"></put-attribute>  -->
+       <put-attribute name="body" value="/WEB-INF/jsp/Admin/editGroupPermission.jsp"></put-attribute>
+   </definition>
+ <!-- END SET PERMISSION-->
+
+  
+ <!-- Start Hirearchy Company Master-->
+ <definition name="viewHirachy" extends="standard-layout">
+       	   <put-attribute name="title" value="Manage Hierarchy Master"></put-attribute>
+          <put-attribute name="pageTitle" value="Add Hierarchy"></put-attribute>
+       	   <put-attribute name="pnav" value="Hierarchy Master"></put-attribute>
+       		<put-attribute name="snav" value="Add Hierarchy"></put-attribute>
+          <put-attribute name="body" value="/WEB-INF/jsp/viewHirachy.jsp"></put-attribute>
+       </definition>
+ <definition name="comanyMasterHierarchy" extends="standard-layout">
+    		 <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+   			 <put-attribute name="header" value="/WEB-INF/tiles/header1.jsp"></put-attribute>
+             <put-attribute name="title" value="wrsis || Admin Home"></put-attribute>
+       		<put-attribute name="body" value="/WEB-INF/jsp/Admin/comanyMasterHierarchy.jsp"></put-attribute>
+   </definition>
+   <definition name="addHierarchy" extends="standard-layout">
+    		 <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+   			 <put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+             <put-attribute name="title" value="wrsis || Admin Home"></put-attribute>
+              <put-attribute name="pageTitle" value="Hierarchy Master"></put-attribute>
+       <put-attribute name="body" value="/WEB-INF/jsp/Admin/AddHierarchy.jsp"></put-attribute>
+   </definition>
+   <definition name="addSubHierarchy" extends="standard-layout">
+    		 <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+   			 <put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+             <put-attribute name="title" value="wrsis || Admin Home"></put-attribute>
+              <put-attribute name="pageTitle" value="Hierarchy Master"></put-attribute>
+       <put-attribute name="body" value="/WEB-INF/jsp/Admin/addSubHierarchy.jsp"></put-attribute>
+   </definition>
+    <!-- end Hirearchy Company Master-->
+    
+    <!-- Dashboard starts -->
+    <definition name="eattaDashboard" extends="standard-layout">
+       	   <put-attribute name="title" value="User Application Form"></put-attribute>
+       	    <put-attribute name="menu" value="/WEB-INF/tiles/menu1.jsp"></put-attribute>
+       	     <put-attribute name="header" value="/WEB-INF/tiles/header1.jsp"></put-attribute>
+       	      <put-attribute name="pageTitle" value="Dashboard"></put-attribute>
+           <put-attribute name="body" value="/WEB-INF/jsp/eattaDashboard.jsp"></put-attribute>
+       </definition>
+    <!-- Dashboard ends -->
+     
+   
+   
+   
+   
+   <!-- link starts -->
+   
+   
+   
+     <definition name="page-layout" template="/WEB-INF/viewpage/common/pageLayout.jsp">
+       	<put-attribute name="title" value="WRSIS"></put-attribute>
+       	<!-- <put-attribute name="pageTitle" value="Dashboard"></put-attribute>
+       	<put-attribute name="pnav" value=""></put-attribute>
+       	<put-attribute name="snav" value=""></put-attribute>
+        -->	
+        <put-attribute name="header" value="/WEB-INF/viewpage/common/header.jsp"></put-attribute>  
+        <put-attribute name="footer" value="/WEB-INF/viewpage/common/footer.jsp"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/viewpage/common/menu.jsp"></put-attribute>   
+        <put-attribute name="body" value=""></put-attribute>
+        
+       </definition>
+       
+       <definition name="adminHome" extends="standard-layout">
+       		<put-attribute name="pageTitle" value="Dashboard"></put-attribute>
+       		<put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>   
+            <put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp"></put-attribute>
+       </definition>
+       
+       <definition name="errorPage" extends="standard-layout">
+            <put-attribute name="body" value="/WEB-INF/jsp/errorPage.jsp"></put-attribute>
+       </definition> 
+       
+       <definition name="login" template="/WEB-INF/viewpage/login.jsp"></definition>
+   
+   
+   
+   		<definition name="welcome" extends="page-layout">
+       		 <put-attribute name="body" value="/WEB-INF/viewpage/dashboard.jsp"></put-attribute>
+        </definition>
+   
+        <definition name="addSurveyDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addSurveyDetails.jsp"></put-attribute>
+        </definition>
+   
+     <definition name="addSurveyDetailsEiar" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addSurveyDetailsEiar.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="addSurveyDetailsDiscardSurveyor" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addSurveyDetailsDiscardSurveyor.jsp"></put-attribute>
+        </definition>
+   
+   		<definition name="uploadSurveyDataXcel" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/uploadSurveyDataXcel.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="uploadIvrData" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/uploadIvrData.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewIvrData" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewIvrData.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewIvrApiData" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewIvrApiData.jsp"></put-attribute>
+        </definition>
+   
+   		<definition name="wrSurveySummaryReports" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/wrSurveySummaryReports.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="ivrSurveyAPIDataReports" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/ivrSurveyAPIDataReports.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="pendingsurvey" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/pendingsurvey.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="mapdetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/mapdetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="allocationforrestanalysis" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/allocationforrestanalysis.jsp"></put-attribute>
+        </definition>
+   
+         <definition name="confirmSurveyData" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/confirmSurveyData.jsp"></put-attribute>
+        </definition>
+        
+          <definition name="confirmSurveyDataEiar" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/confirmSurveyDataEiar.jsp"></put-attribute>
+        </definition>
+   
+    <definition name="confirmSurveyDataDiscardSurveyor" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/confirmSurveyDataDiscardSurveyor.jsp"></put-attribute>
+        </definition>
+   
+   
+   		<definition name="modifySurveyData" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/modifySurveyData.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewsurveydetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewsurveydetails.jsp"></put-attribute>
+        </definition>
+        
+        
+        <definition name="viewsurveydetailsForExcel" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewsurveydetailsForExcel.jsp"></put-attribute>
+        </definition>
+        
+        
+        <definition name="viewsurveyForRaceanalysis" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewsurveyForRaceanalysis.jsp"></put-attribute>
+        </definition>
+        <definition name="viewSurveyForRaceSample" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyForRaceSample.jsp"></put-attribute>
+        </definition>
+        <definition name="viewSurveyDetailsByRC" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyDetailsPending.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="uploadSurveyDataXcelView" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/uploadSurveyDataXcelView.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="publishedsurvey" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/publishedsurvey.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="discardedsurvey" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/discardedsurvey.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewsample" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewsample.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="editLabTaggedSample" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editLabTaggedSample.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="externalTaggedSamples" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/externalTaggedSamples.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="uploadSurveyDataExcelFileDetailsView" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/uploadSurveyDataExcelFileDetailsView.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewsurvey" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewsurvey.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="ivrSummaryReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/ivrSummaryReport.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="stem-rust-race-analysis" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/stem-rust-race-analysis.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="raceAnalysisDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisDetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="inoculatedsample" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/inoculatedsample.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="raceanalysisresult" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceanalysisresult.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="raceAnalysisNewDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisNewDetails.jsp"></put-attribute>
+        </definition>
+        <definition name="raceAnalysisNewDetailsView" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisNewDetailsView.jsp"></put-attribute>
+        </definition>
+        <definition name="raceAnalysisNewDetailsYellow" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisNewDetailsYellow.jsp"></put-attribute>
+        </definition>
+        <definition name="raceAnalysisNewDetailsYellowView" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisNewDetailsYellowView.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="raceAnalysisFirstRepetitionCompleted" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisFirstRepetitionCompleted.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="raceAnalysisPendingDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisPendingDetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewRaceAnalysisFirstRepetition" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewRaceAnalysisFirstRepetition.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewRaceAnalysisSecondRepetition" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewRaceAnalysisSecondRepetition.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="raceAnalysisFinalResult" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisFinalResult.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="addadvisory" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addadvisory.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewadvisory" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewadvisory.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="recommendation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/recommendation.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewrecommendation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewrecommendation.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="addrecommendation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addrecommendation.jsp"></put-attribute>
+        </definition>
+         <definition name="editRecommendation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editRecommendation.jsp"></put-attribute>
+        </definition>
+        <definition name="moarecommendation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/moarecommendation.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="woredamonitorrecommendations" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/woredamonitorrecommendations.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewmonitorrecommendationsdetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewmonitorrecommendationsdetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewrecommendationsdetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewrecommendationsdetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="zonemonitorrecommendations" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/zonemonitorrecommendations.jsp"></put-attribute>
+        </definition>
+        
+   		<definition name="prevalenceReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/prevalenceReport.jsp"></put-attribute>
+   		</definition>
+   		<definition name="incidenceSeverityRustReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/incidenceSeverityRustReport.jsp"></put-attribute>
+   		</definition>
+   		<definition name="reactionToRustReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/reactionToRustReport.jsp"></put-attribute>
+   		</definition>
+   		<definition name="wheatRustReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/wheatRustReport.jsp"></put-attribute>
+   		</definition>
+   		<definition name="summaryWheatRustReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/summaryWheatRustReport.jsp"></put-attribute>
+   		</definition>
+   		<definition name="stemRustRacesDetectedCroppingSeasonTable" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/stemRustRacesDetectedCroppingSeasonTable.jsp"></put-attribute>
+   		</definition>
+   		<definition name="stemRustRacesIdentifiedCroppingSeasonTable" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/stemRustRacesIdentifiedCroppingSeasonTable.jsp"></put-attribute>
+   		</definition>	
+   		<definition name="virulenceSpectrumPgtRaces" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/virulenceSpectrumPgtRaces.jsp"></put-attribute>
+   		</definition>
+		<definition name="addTypeofRust" extends="page-layout">
+			<put-attribute name="body" value="/WEB-INF/viewpage/addTypeofRustMaster.jsp"></put-attribute>
+		</definition>   
+   		<definition name="viewTypeofRust" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewTypeofRust.jsp"></put-attribute>
+   		</definition>
+   		<definition name="editTypeofRust" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addTypeofRustEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addgrowthstageMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addGrowthStage.jsp"></put-attribute>
+   		</definition>
+		<definition name="viewGrowthStage" extends="page-layout">
+			<put-attribute name="body" value="/WEB-INF/viewpage/viewgrowthstage.jsp"></put-attribute>
+		</definition>   
+   		<definition name="editGrowthStage" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addgrowthstageEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addSampleTypeMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addSampleType.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewSampleTypeMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewSampleType.jsp"></put-attribute>
+   		</definition>
+   		<definition name="editSampleTypeMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/sampleTypeEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewSampleTypeMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewSampleType.jsp"></put-attribute>
+   		</definition>
+   		<definition name="editextTaggedSample" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editextTaggedSample.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="dumpedExternalSamples" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/dumpedExternalSamples.jsp"></put-attribute>
+   		</definition>
+   		<definition name="extRaceResult" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/extRaceResult.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewUserTypeMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewUserType.jsp"></put-attribute>
+   		</definition>
+   		<definition name="editUserTypeMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/userTypeEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addTypeOfFungicideMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addTypeOfFungicide.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewTypeOfFungicideMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewTypeOfFungicide.jsp"></put-attribute>
+   		</definition>
+   		<definition name="editTypeOfFungicideMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editTypeOfFungicide.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addRegionMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addRegion.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewRegionMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRegion.jsp"></put-attribute>
+   		</definition>
+   		<definition name="editRegionMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editRegion.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addZoneMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addZone.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewZoneMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewZone.jsp"></put-attribute>
+   		</definition>
+   		<definition name="editZoneMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editZone.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addWoredaMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addWoreda.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewWoredaMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewWoreda.jsp"></put-attribute>
+   		</definition>
+   		<definition name="editWoredaMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editWoreda.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="addKebeleMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addKebele.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewKebeleMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewKebele.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="editKebeleMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editKebele.jsp"></put-attribute>
+   		</definition>
+   		<definition name="wheatMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/wheatMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="wheatMasterView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/wheatMasterView.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="wheatMasterEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/wheatMasterEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="wheatDifferentialLineMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/wheatDifferentialLineMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="wheatDifferentialLineMasterView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/wheatDifferentialLineMasterView.jsp"></put-attribute>
+   		</definition>
+   		<definition name="wheatDifferentialLineMasterEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/wheatDifferentialLineMasterEdit.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="raceIdentificationChart" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/raceIdentificationChart.jsp"></put-attribute>
+   		</definition>
+   		<definition name="raceIdentificationChartView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/raceIdentificationChartView.jsp"></put-attribute>
+   		</definition>
+   		<definition name="raceIdentificationChartEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/raceIdentificationChartEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="configureResearchCenterMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/configureResearchCenterMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="configureResearchCenterMasterView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/configureResearchCenterMasterView.jsp"></put-attribute>
+   		</definition>
+   		<definition name="configureResearchCenterMasterEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/configureResearchCenterMasterEdit.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="seasonMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/seasonMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="seasonMasterView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/seasonMasterView.jsp"></put-attribute>
+   		</definition>
+   	    <definition name="seasonMasterEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/seasonMasterEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="deseaseMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/deseaseMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="deseaseMasterView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/deseaseMasterView.jsp"></put-attribute>
+   		</definition>
+   		<definition name="deseaseMasterEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/deseaseMasterEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="questionnaireMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/questionnaireMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="questionnaireMasterView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/questionnaireMasterView.jsp"></put-attribute>
+   		</definition>
+   		<definition name="questionnaireMasterEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/questionnaireMasterEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="raceScoringMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/raceScoringMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="raceScoringMasterView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/raceScoringMasterView.jsp"></put-attribute>
+   		</definition>
+   		<definition name="raceScoringMasterEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/raceScoringMasterEdit.jsp"></put-attribute>
+   		</definition>
+   		<definition name="rustIncidentView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/rustIncidentView.jsp"></put-attribute>
+   		</definition>
+   		<definition name="adduser" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/adduser.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewuser" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewuser.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="edituser" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/edituser.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="adddesignation" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/adddesignation.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewdesignation" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewdesignation.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="editdesignation" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editdesignation.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="rustSurveyData" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/rustSurveyData.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewPublishedRecommendation" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewPublishedRecommendation.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewPublishedAdvisory" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewPublishedAdvisory.jsp"></put-attribute>
+   		</definition>
+   		
+   		 <definition name="leaf-rust-race-analysis" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/leaf-rust-race-analysis.jsp"></put-attribute>
+        </definition>
+        <definition name="yellow-rust-race-analysis" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/yellow-rust-race-analysis.jsp"></put-attribute>
+        </definition>
+          <definition name="leafRustinoculatedsample" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/leafRustinoculatedsample.jsp"></put-attribute>
+        </definition>
+        <definition name="leafRustraceanalysisresult" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/leafRustraceanalysisresult.jsp"></put-attribute>
+        </definition>
+        <definition name="leafRustRaceAnalysisDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/leafRustRaceAnalysisDetails.jsp"></put-attribute>
+        </definition>
+        <definition name="leafRustRaceAnalysisNewDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/leafRustRaceAnalysisNewDetails.jsp"></put-attribute>
+        </definition>
+        <definition name="leafRustRaceAnalysisFirstRepetitionCompleted" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/leafRustRaceAnalysisFirstRepetitionCompleted.jsp"></put-attribute>
+        </definition>
+        <definition name="leafRustRaceAnalysisPendingDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/leafRustRaceAnalysisPendingDetails.jsp"></put-attribute>
+        </definition>
+        <definition name="leafRustRaceAnalysisFinalResult" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/leafRustRaceAnalysisFinalResult.jsp"></put-attribute>
+        </definition>
+        <definition name="viewLeafRustRaceAnalysisFirstRepetition" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewLeafRustRaceAnalysisFirstRepetition.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewLeafRustRaceAnalysisSecondRepetition" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewLeafRustRaceAnalysisSecondRepetition.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="yellowRustRaceAnalysisDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/yellowRustRaceAnalysisDetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="yellowRustinoculatedsample" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/yellowRustinoculatedsample.jsp"></put-attribute>
+        </definition>
+   		
+   		<definition name="yellowRustRaceAnalysisNewDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/yellowRustRaceAnalysisNewDetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="yellowRustRaceAnalysisFirstRepetitionCompleted" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/yellowRustRaceAnalysisFirstRepetitionCompleted.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="yellowRustRaceAnalysisPendingDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/yellowRustRaceAnalysisPendingDetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="yellowRustraceanalysisresult" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/yellowRustraceanalysisresult.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="yellowRustRaceAnalysisFinalResult" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/yellowRustRaceAnalysisFinalResult.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewYellowRustRaceAnalysisFirstRepetition" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewYellowRustRaceAnalysisFirstRepetition.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewYellowRustRaceAnalysisSecondRepetition" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewYellowRustRaceAnalysisSecondRepetition.jsp"></put-attribute>
+        </definition>
+          
+        <definition name="viewRaceAnalysisStatus" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewRaceAnalysisStatus.jsp"></put-attribute>
+        </definition>
+          <definition name="addOrganization" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addOrganization.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewOrganization" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewOrganization.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="editOrganization" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editOrganization.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="addCommittee" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addCommittee.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewCommittee" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewCommittee.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="editCommittee" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editCommittee.jsp"></put-attribute>
+        </definition>
+
+        <definition name="editadvisory" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editadvisory.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="demographicTagging" extends="page-layout">
+        	<put-attribute name="body" value="/WEB-INF/viewpage/demographicTagging.jsp"></put-attribute>
+        </definition>
+        <definition name="demographicTaggingView" extends="page-layout">
+        	<put-attribute name="body" value="/WEB-INF/viewpage/demographicTaggingView.jsp"></put-attribute>
+        </definition>
+        <definition name="demographicTaggingEdit" extends="page-layout">
+        	<put-attribute name="body" value="/WEB-INF/viewpage/demographicTaggingEdit.jsp"></put-attribute>
+        </definition>
+         <definition name="addApprovalMaster" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addApprovalMaster.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewApprovalMaster" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewApprovalMaster.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="editApprovalMaster" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editApprovalMaster.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="addApprovalAuthority" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addApprovalAuthority.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="addJobDeligation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addJobDeligation.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewJobDeligation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewJobDeligation.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="editJobDeligation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editJobDeligation.jsp"></put-attribute>
+        </definition>
+        <definition name="regionAndRustTypeReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/regionAndRustTypeReport.jsp"></put-attribute>
+        </definition>
+         <definition name="surveyAndIvrReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/surveyAndIvrReport.jsp"></put-attribute>
+        </definition>
+         <definition name="rustTypeChartReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/rustTypeChartReport.jsp"></put-attribute>
+        </definition>
+         <definition name="surveyPublishedReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/surveyPublishedReport.jsp"></put-attribute>
+        </definition>
+         <definition name="surveyDiscardedReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/surveyDiscardedReport.jsp"></put-attribute>
+        </definition>
+        <definition name="regionAndRustTypeByZoneChart" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/regionAndRustTypeByZoneChart.jsp"></put-attribute>
+        </definition>
+		 <definition name="surveyIvrAndIncidentChart" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/surveyIvrAndIncidentChart.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="addTimeLimit" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addTimeLimit.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="editTimeLimit" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editTimeLimit.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewTimeLimit" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewTimeLimit.jsp"></put-attribute>
+        </definition>
+        
+        
+        <definition name="IVRMapDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/IVRMapDetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="IncidentMapDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/IncidentMapDetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="homeDashBoard" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/homeDashBoard.jsp"></put-attribute>
+        </definition>
+        <definition name="homeDashBoard2" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/homeDashBoard2.jsp"></put-attribute>
+        </definition>
+		<definition name="homeDashBoardUser" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/homeDashBoardUser.jsp"></put-attribute>
+        </definition>
+	
+		<definition name="viewMISReports" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewMISReports.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="changePassword" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/changePassword.jsp"></put-attribute>
+        </definition>
+		
+		<definition name="firstTimeLogin" template="/WEB-INF/viewpage/firstTimeLogin.jsp"></definition>
+   
+       <definition name="forgotPassword" template="/WEB-INF/viewpage/forgotPassword.jsp"></definition>
+        
+        <definition name="addUserUserMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addUserUserMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addUserUserViewMaster" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addUserUserViewMaster.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addUserUserMasterEdit" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addUserUserMasterEdit.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="userProfile" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/userProfile.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="addVariety" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addVariety.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewVariety" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewVariety.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="editVariety" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editVariety.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewRecommendationByBoa" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRecommendationByBoa.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="recommendationForwardByBoa" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/recommendationForwardByBoa.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewRecommendationsForwardedByBoa" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRecommendationsForwardedByBoa.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="woredaExpertRecommendation" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/woredaExpertRecommendation.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="surveyorReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/surveyorReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="pathologistReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/pathologistReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="woredaExpertsReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/woredaExpertsReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="devAgentReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/devAgentReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="woredaExpertImplementation" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/woredaExpertImplementation.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewImplementation" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewImplementation.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewImplementationDetails" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewImplementationDetails.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="rustReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/rustReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="raceAnalysisReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/raceAnalysisReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewReportDetails" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewReportDetails.jsp"></put-attribute>
+   		</definition>
+   		<definition name="implementationSummaryReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/implementationSummaryReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewYellowRacePhenotype" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewYellowRacePhenotype.jsp"></put-attribute>
+   		</definition>
+   		<definition name="addYellowRacePhenotype" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/addYellowRacePhenotype.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="editYellowRacePhenotype" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/editYellowRacePhenotype.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewMonitorImplementation" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewMonitorImplementation.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="monitorRecommendationPublished" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/monitorRecommendationPublished.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="publishedMonitorData" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/publishedMonitorData.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="discardedMonitorData" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/discardedMonitorData.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewRecommendationsDetailsOnMonitor" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRecommendationsDetailsOnMonitor.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="monitorRecommendationPublishedView" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/monitorRecommendationPublishedView.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="monitorDataReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/monitorDataReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewRecommendationResult" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRecommendationResult.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewRecommendationMoniterImpl" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRecommendationMoniterImpl.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewPublishedRecommendationSurveyData" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewPublishedRecommendationSurveyData.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewDiscardedRecommendationSurveyData" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewDiscardedRecommendationSurveyData.jsp"></put-attribute>
+   		</definition>
+   		
+		<definition name="surveyExceFormat" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/surveyExceFormat.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewRustIncident" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRustIncident.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="dashboardRustIncident" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/dashboardRustIncident.jsp"></put-attribute>
+   		</definition>
+   		<definition name="rustSurveyDataOtherUser" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/rustSurveyDataOtherThanEir.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="reportSurveyReportByGlobalRust" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/reportSurveyReportByGlobalRust.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="implementationReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/implementationReport.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewRaceAnalysisReport" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRaceAnalysisReport.jsp"></put-attribute>
+   		</definition>
+   		 
+   		<definition name="reportSurveyReportByGlobalRust" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/reportSurveyReportByGlobalRust.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewSurveyDetailsOnPublished" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyDetailsOnPublished.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewRaceAnalysisStatusSurveyNo" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRaceAnalysisStatusSurveyNo.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewSurveyDetailsOnExternalSample" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyDetailsOnExternalSample.jsp"></put-attribute>
+   		</definition>
+   		<definition name="viewSurveyDetailsOnDumpedSample" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyDetailsOnDumpedSample.jsp"></put-attribute>
+   		</definition>
+   		
+   		
+        <definition name="viewSurveyDetailsPending" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyDetailsPending.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="addNotification" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/addNotification.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewNotification" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewNotification.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="archiveNotification" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/archiveNotification.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="editNotification" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editNotification.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="rustSurveyOtherDisease" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/rustSurveyOtherDiseaseReport.jsp"></put-attribute>
+        </definition>
+        <definition name="rustSurveyData2" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/rustSurveyData2.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="rustSurveyAndRecommentationSurveyChart" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/rustSurveyAndRecommentationSurveyChart.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="queryBuilder" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/queryBuilder.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewsurveyDetailsOnPending" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyDetailsOnPending.jsp"></put-attribute>
+   		</definition>
+   		
+   		<definition name="viewRustDetailsOnDashboard" extends="page-layout">
+   			<put-attribute name="body" value="/WEB-INF/viewpage/viewRustDetailsOnDashboard.jsp"></put-attribute>
+   		</definition>
+   		
+   		 <definition name="pendingrecommendation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/pendingrecommendation.jsp"></put-attribute>
+        </definition>
+   		
+   		
+   		 <definition name="publishingrecommendation" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewpublishrecommendation.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="advisorypending" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/advisorypending.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="advisorypublished" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/advisorypublished.jsp"></put-attribute>
+        </definition>
+        <definition name="editRecommendationApp" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editRecommendationApp.jsp"></put-attribute>
+        </definition>
+         <definition name="editadvisoryApp" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/editadvisoryApp.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="mobileLogView" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/mobileLogView.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewSucessWebLoginDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewSucessWebLoginDetails.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewQueryBuilderLog" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewQueryBuilderLog.jsp"></put-attribute>
+        </definition>
+        
+        
+        <definition name="viewSucessMobLoginDetails" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewSucessMobLoginDetails.jsp"></put-attribute>
+        </definition>
+        
+        
+        <definition name="viewGisFileLogg" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewGisFileLogg.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="viewSurveyDetailsOnDashboard" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyDetailsOnDashboard.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="gisForcastingFile" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/gisForcastingFile.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="viewUKMetAndSurvey" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewUKMetAndSurvey.jsp"></put-attribute>
+        </definition>
+        
+        <definition name="viewLogFile" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewLogFile.jsp"></put-attribute>
+        </definition>
+           <definition name="viewSurveyReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewSurveyReport.jsp"></put-attribute>
+        </definition> 
+        
+         <definition name="viewRegisteredPacsInspectorNew" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewRegisteredPacsInspectorNew.jsp"></put-attribute>
+        </definition>
+        
+            <definition name="viewRegisteredPacsInspectorApprove" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewRegisteredPacsInspectorApprove.jsp"></put-attribute>
+        </definition>
+        
+            <definition name="viewRegisteredPacsInspectorReject" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/viewRegisteredPacsInspectorReject.jsp"></put-attribute>
+        </definition>
+        
+              <definition name="plotSearchReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/plotSearchReport.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="tahasilSummaryReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/tahasilSummaryReport.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="mapViewerReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/mapViewerReport.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="villageSummaryFarmerWiseReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/villageSummaryFarmerWiseReport.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="villageSummaryPlotWiseReport" extends="page-layout">
+       		<put-attribute name="body" value="/WEB-INF/viewpage/villageSummaryPlotWiseReport.jsp"></put-attribute>
+        </definition>
+        
+         <definition name="signUpPacsInspector" template="/WEB-INF/viewpage/signUpPacsInspector.jsp"></definition>
+        
+   <!-- link ends -->
+   
+   <definition name="externalPageAccess" extends="page-layout">
+       		<put-attribute name="body" value="/WRSISGIS/forecastingMap.jsp"></put-attribute>
+        </definition>
+        
+  
+   		<!-- <definition name="externalPageAccess" template="/WRSISGIS/forecastingMap.jsp"></definition> -->
+   		
+   
+    <definition name="aboutus" template="/WEB-INF/viewpage/aboutus.jsp"></definition>
+    
+  		    <definition name="privacy" template="/WEB-INF/viewpage/privacy.jsp"></definition>
+  		
+       <definition name="surveymap" template="/WEB-INF/viewpage/surveymap.jsp"></definition>
+ 
+</tiles-definitions>
